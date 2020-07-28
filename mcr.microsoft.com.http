@@ -1,0 +1,21 @@
+@McrHost = mcr.microsoft.com
+
+###
+# @name McrApiTest
+https://{{McrHost}}/v2/
+
+###
+# @name McrCatalog
+https://{{McrHost}}/v2/_catalog
+
+###
+@McrImage = windows
+###
+# @name McrImageTagsList
+https://{{McrHost}}/v2/{{McrImage}}/tags/list
+
+###
+@McrTag = 2004-amd64
+###
+# @name McrImageManifestsTag
+https://{{McrHost}}/v2/{{McrImage}}/manifests/{{McrTag}}
